@@ -2323,6 +2323,55 @@
 	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
 	<fval name="uriprefix"><value>/payment</value></fval>
 </entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIBroker" entityPK="4775684619311115927" parentPK="-6210672051454284634">
+	<fval name="apiVersion"><value>1.0</value></fval>
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
+	<fval name="corsUsage"><value xsi:nil="true"></value></fval>
+	<fval name="description"><value></value></fval>
+	<fval name="descriptionLocation"><value>INTERNAL</value></fval>
+	<fval name="destination"><value xsi:nil="true"></value></fval>
+	<fval name="enableAccessLogging"><value>0</value></fval>
+	<fval name="enabled"><value>1</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
+	<fval name="httpMethod"><value>*</value></fval>
+	<fval name="id"><value>889c738a-ddd7-445d-b71f-c5ba9f6dd6e0</value></fval>
+	<fval name="logMask"><value>2</value></fval>
+	<fval name="markdownFile"><value></value></fval>
+	<fval name="name"><value>000 _ BAGI internal ORI</value></fval>
+	<fval name="pathMatching"><value>LONGEST</value></fval>
+	<fval name="payloadMask"><value>0</value></fval>
+	<fval name="routingType"><value>CUSTOM</value></fval>
+	<fval name="summary"><value></value></fval>
+	<fval name="uriprefix"><value>/api/v1/bagi/ori</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="416056409445822554" parentPK="4775684619311115927">
+	<fval name="blockUnspecifiedParams"><value>true</value></fval>
+	<fval name="checkSourceContentType"><value>false</value></fval>
+	<fval name="copyContentType"><value>INBOUND</value></fval>
+	<fval name="copyQueryParams"><value>true</value></fval>
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
+	<fval name="corsUsage"><value xsi:nil="true"></value></fval>
+	<fval name="description"><value></value></fval>
+	<fval name="descriptionLocation"><value>INTERNAL</value></fval>
+	<fval name="destinationContentType"><value>application/x-www-form-urlencoded</value></fval>
+	<fval name="destinationHttpVerb"><value>*</value></fval>
+	<fval name="destinationPath"><value xsi:nil="true"></value></fval>
+	<fval name="enableAccessLogging"><value>0</value></fval>
+	<fval name="enabled"><value>1</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
+	<fval name="filterCircuit"><value contentType="reference">
+<key type='CircuitContainer'><id field='name' value='Generated Policies'/><key type='CircuitContainer'><id field='name' value='REST API&apos;s'/><key type='CircuitContainer'><id field='name' value='000 _ BAGI internal ORI'/><key type='FilterCircuit'><id field='name' value='ori'/></key></key></key></key>	</value></fval>
+	<fval name="httpMethod"><value>POST</value></fval>
+	<fval name="id"><value>f542f8da-9031-4dad-af1b-af7df24cd6da</value></fval>
+	<fval name="logMask"><value>2</value></fval>
+	<fval name="markdownFile"><value></value></fval>
+	<fval name="name"><value>ori</value></fval>
+	<fval name="notes"><value></value></fval>
+	<fval name="pathMatching"><value>EXACT</value></fval>
+	<fval name="payloadMask"><value>0</value></fval>
+	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
+	<fval name="uriprefix"><value>/ori</value></fval>
+</entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="InetInterface" entityPK="5729508071924094291" parentPK="-6210672051454284634">
 	<fval name="activetimeout"><value>60000</value></fval>
 	<fval name="address"><value>*</value></fval>
