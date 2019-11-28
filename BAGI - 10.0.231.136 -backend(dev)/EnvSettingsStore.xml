@@ -139,6 +139,17 @@
 	<fval name="multiline"><value>0</value></fval>
 	<fval name="value"><value>${env.SERVER.SERVICE.SIPP.LOAN}</value></fval>
 </entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="EnvironmentalizedEntity" entityPK="-7299866636116467283" parentPK="5533038128353951405">
+	<fval name="entityPk"><value contentType="reference">
+<key type='CircuitContainer'><id field='name' value='01-BAGI'/><key type='CircuitContainer'><id field='name' value='04-Routing'/><key type='FilterCircuit'><id field='name' value='API-01-RouteToFioranoFromKPS'/><key type='ConnectToURLFilter'><id field='name' value='Connect to Fiorano'/></key></key></key></key>	</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="EnvironmentalizedFieldString" entityPK="7230504158946993323" parentPK="-7299866636116467283">
+	<fval name="displayName"><value>URL</value></fval>
+	<fval name="entityFieldName"><value>url</value></fval>
+	<fval name="index"><value>0</value></fval>
+	<fval name="multiline"><value>0</value></fval>
+	<fval name="value"><value>${IP.BAG.FIORANO}${service.name.axway}</value></fval>
+</entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="EnvironmentalizedEntity" entityPK="-2065750782512524493" parentPK="5533038128353951405">
 	<fval name="entityPk"><value contentType="reference">
 <key type='CircuitContainer'><id field='name' value='01-BAGI'/><key type='CircuitContainer'><id field='name' value='04-Routing'/><key type='FilterCircuit'><id field='name' value='API-05-RouteToFiorano_Transfer_In_Out'/><key type='ConnectToURLFilter'><id field='name' value='Connect to Fiorano'/></key></key></key></key>	</value></fval>

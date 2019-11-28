@@ -1668,6 +1668,7 @@
 	<fval name="uriprefix"><value>/prepaid/denom</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="XMLFirewall" entityPK="-3770253183895613873" parentPK="-6210672051454284634">
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
 	<fval name="corsUsage"><value>HTTP</value></fval>
 	<fval name="enableAccessLogging"><value>0</value></fval>
 	<fval name="enabled"><value>1</value></fval>
@@ -1682,7 +1683,7 @@
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="SoftCircuitReference" entityPK="4017065250079006343" parentPK="-3770253183895613873">
 	<fval name="circuitPK"><value>system.policy.request</value></fval>
-	<fval name="evaluate"><value>0</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
 	<fval name="name"><value>GLOBAL_POLICY_REQ</value></fval>
 	<fval name="priority"><value>0</value></fval>
 </entity>
@@ -1694,7 +1695,7 @@
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="SoftCircuitReference" entityPK="6495841516826112242" parentPK="-3770253183895613873">
 	<fval name="circuitPK"><value>system.policy.response</value></fval>
-	<fval name="evaluate"><value>0</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
 	<fval name="name"><value>GLOBAL_POLICY_RSP</value></fval>
 	<fval name="priority"><value>4</value></fval>
 </entity>
@@ -2133,6 +2134,34 @@
 	<fval name="payloadMask"><value>0</value></fval>
 	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
 	<fval name="uriprefix"><value>/activation</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="-4022234668330438423" parentPK="1609546562903849635">
+	<fval name="blockUnspecifiedParams"><value>true</value></fval>
+	<fval name="checkSourceContentType"><value>false</value></fval>
+	<fval name="copyContentType"><value>INBOUND</value></fval>
+	<fval name="copyQueryParams"><value>true</value></fval>
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
+	<fval name="corsUsage"><value xsi:nil="true"></value></fval>
+	<fval name="description"><value></value></fval>
+	<fval name="descriptionLocation"><value>INTERNAL</value></fval>
+	<fval name="destinationContentType"><value>application/x-www-form-urlencoded</value></fval>
+	<fval name="destinationHttpVerb"><value>*</value></fval>
+	<fval name="destinationPath"><value xsi:nil="true"></value></fval>
+	<fval name="enableAccessLogging"><value>0</value></fval>
+	<fval name="enabled"><value>1</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
+	<fval name="filterCircuit"><value contentType="reference">
+<key type='CircuitContainer'><id field='name' value='Generated Policies'/><key type='CircuitContainer'><id field='name' value='REST API&apos;s'/><key type='CircuitContainer'><id field='name' value='10-BAGI_CMS_Card'/><key type='FilterCircuit'><id field='name' value='04-CMS_Block'/></key></key></key></key>	</value></fval>
+	<fval name="httpMethod"><value>POST</value></fval>
+	<fval name="id"><value>b1ffbba8-07d0-4f59-93d8-3f7e4399ddf0</value></fval>
+	<fval name="logMask"><value>2</value></fval>
+	<fval name="markdownFile"><value></value></fval>
+	<fval name="name"><value>04-CMS_Block</value></fval>
+	<fval name="notes"><value></value></fval>
+	<fval name="pathMatching"><value>EXACT</value></fval>
+	<fval name="payloadMask"><value>0</value></fval>
+	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
+	<fval name="uriprefix"><value>/block</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="-3694124732405556368" parentPK="1609546562903849635">
 	<fval name="blockUnspecifiedParams"><value>true</value></fval>
@@ -2579,6 +2608,118 @@
 	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
 	<fval name="uriprefix"><value>/inquiry</value></fval>
 </entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="4336560358188931709" parentPK="8690316113367300932">
+	<fval name="blockUnspecifiedParams"><value>true</value></fval>
+	<fval name="checkSourceContentType"><value>false</value></fval>
+	<fval name="copyContentType"><value>INBOUND</value></fval>
+	<fval name="copyQueryParams"><value>true</value></fval>
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
+	<fval name="corsUsage"><value xsi:nil="true"></value></fval>
+	<fval name="description"><value></value></fval>
+	<fval name="descriptionLocation"><value>INTERNAL</value></fval>
+	<fval name="destinationContentType"><value>application/x-www-form-urlencoded</value></fval>
+	<fval name="destinationHttpVerb"><value>*</value></fval>
+	<fval name="destinationPath"><value xsi:nil="true"></value></fval>
+	<fval name="enableAccessLogging"><value>0</value></fval>
+	<fval name="enabled"><value>1</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
+	<fval name="filterCircuit"><value contentType="reference">
+<key type='CircuitContainer'><id field='name' value='Generated Policies'/><key type='CircuitContainer'><id field='name' value='REST API&apos;s'/><key type='CircuitContainer'><id field='name' value='07-BAGI_BACKEND_IN_VA'/><key type='FilterCircuit'><id field='name' value='05-Transfer_VA_Transfer'/></key></key></key></key>	</value></fval>
+	<fval name="httpMethod"><value>POST</value></fval>
+	<fval name="id"><value>e7e32012-5577-41cc-b0e0-ef8641693248</value></fval>
+	<fval name="logMask"><value>2</value></fval>
+	<fval name="markdownFile"><value></value></fval>
+	<fval name="name"><value>05-Transfer_VA_Transfer</value></fval>
+	<fval name="notes"><value></value></fval>
+	<fval name="pathMatching"><value>EXACT</value></fval>
+	<fval name="payloadMask"><value>0</value></fval>
+	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
+	<fval name="uriprefix"><value>/transfer</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="6267579677609659942" parentPK="8690316113367300932">
+	<fval name="blockUnspecifiedParams"><value>true</value></fval>
+	<fval name="checkSourceContentType"><value>false</value></fval>
+	<fval name="copyContentType"><value>INBOUND</value></fval>
+	<fval name="copyQueryParams"><value>true</value></fval>
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
+	<fval name="corsUsage"><value xsi:nil="true"></value></fval>
+	<fval name="description"><value></value></fval>
+	<fval name="descriptionLocation"><value>INTERNAL</value></fval>
+	<fval name="destinationContentType"><value>application/x-www-form-urlencoded</value></fval>
+	<fval name="destinationHttpVerb"><value>*</value></fval>
+	<fval name="destinationPath"><value xsi:nil="true"></value></fval>
+	<fval name="enableAccessLogging"><value>0</value></fval>
+	<fval name="enabled"><value>1</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
+	<fval name="filterCircuit"><value contentType="reference">
+<key type='CircuitContainer'><id field='name' value='Generated Policies'/><key type='CircuitContainer'><id field='name' value='REST API&apos;s'/><key type='CircuitContainer'><id field='name' value='07-BAGI_BACKEND_IN_VA'/><key type='FilterCircuit'><id field='name' value='09-Info_Saldo'/></key></key></key></key>	</value></fval>
+	<fval name="httpMethod"><value>POST</value></fval>
+	<fval name="id"><value>71a36ba1-6b57-4970-8602-2d7cb84cbac4</value></fval>
+	<fval name="logMask"><value>2</value></fval>
+	<fval name="markdownFile"><value></value></fval>
+	<fval name="name"><value>09-Info_Saldo</value></fval>
+	<fval name="notes"><value></value></fval>
+	<fval name="pathMatching"><value>EXACT</value></fval>
+	<fval name="payloadMask"><value>0</value></fval>
+	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
+	<fval name="uriprefix"><value>/infosaldo</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="6373019969658630344" parentPK="8690316113367300932">
+	<fval name="blockUnspecifiedParams"><value>true</value></fval>
+	<fval name="checkSourceContentType"><value>false</value></fval>
+	<fval name="copyContentType"><value>INBOUND</value></fval>
+	<fval name="copyQueryParams"><value>true</value></fval>
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
+	<fval name="corsUsage"><value xsi:nil="true"></value></fval>
+	<fval name="description"><value></value></fval>
+	<fval name="descriptionLocation"><value>INTERNAL</value></fval>
+	<fval name="destinationContentType"><value>application/x-www-form-urlencoded</value></fval>
+	<fval name="destinationHttpVerb"><value>*</value></fval>
+	<fval name="destinationPath"><value xsi:nil="true"></value></fval>
+	<fval name="enableAccessLogging"><value>0</value></fval>
+	<fval name="enabled"><value>1</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
+	<fval name="filterCircuit"><value contentType="reference">
+<key type='CircuitContainer'><id field='name' value='Generated Policies'/><key type='CircuitContainer'><id field='name' value='REST API&apos;s'/><key type='CircuitContainer'><id field='name' value='07-BAGI_BACKEND_IN_VA'/><key type='FilterCircuit'><id field='name' value='07-Transfer_VA_Void'/></key></key></key></key>	</value></fval>
+	<fval name="httpMethod"><value>POST</value></fval>
+	<fval name="id"><value>fb82abef-6794-41f9-9745-7f7fb272d65e</value></fval>
+	<fval name="logMask"><value>2</value></fval>
+	<fval name="markdownFile"><value></value></fval>
+	<fval name="name"><value>07-Transfer_VA_Void</value></fval>
+	<fval name="notes"><value></value></fval>
+	<fval name="pathMatching"><value>EXACT</value></fval>
+	<fval name="payloadMask"><value>0</value></fval>
+	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
+	<fval name="uriprefix"><value>/void</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="7431491555411002810" parentPK="8690316113367300932">
+	<fval name="blockUnspecifiedParams"><value>true</value></fval>
+	<fval name="checkSourceContentType"><value>false</value></fval>
+	<fval name="copyContentType"><value>INBOUND</value></fval>
+	<fval name="copyQueryParams"><value>true</value></fval>
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
+	<fval name="corsUsage"><value xsi:nil="true"></value></fval>
+	<fval name="description"><value></value></fval>
+	<fval name="descriptionLocation"><value>INTERNAL</value></fval>
+	<fval name="destinationContentType"><value>application/x-www-form-urlencoded</value></fval>
+	<fval name="destinationHttpVerb"><value>*</value></fval>
+	<fval name="destinationPath"><value xsi:nil="true"></value></fval>
+	<fval name="enableAccessLogging"><value>0</value></fval>
+	<fval name="enabled"><value>1</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
+	<fval name="filterCircuit"><value contentType="reference">
+<key type='CircuitContainer'><id field='name' value='Generated Policies'/><key type='CircuitContainer'><id field='name' value='REST API&apos;s'/><key type='CircuitContainer'><id field='name' value='07-BAGI_BACKEND_IN_VA'/><key type='FilterCircuit'><id field='name' value='08-Transfer_VA_Debit'/></key></key></key></key>	</value></fval>
+	<fval name="httpMethod"><value>POST</value></fval>
+	<fval name="id"><value>d25f7145-adc1-4e0a-bf98-94fec7d2af68</value></fval>
+	<fval name="logMask"><value>2</value></fval>
+	<fval name="markdownFile"><value></value></fval>
+	<fval name="name"><value>08-Transfer_VA_Debit</value></fval>
+	<fval name="notes"><value></value></fval>
+	<fval name="pathMatching"><value>EXACT</value></fval>
+	<fval name="payloadMask"><value>0</value></fval>
+	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
+	<fval name="uriprefix"><value>/debit/transfer</value></fval>
+</entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="8328320196804616440" parentPK="8690316113367300932">
 	<fval name="blockUnspecifiedParams"><value>true</value></fval>
 	<fval name="checkSourceContentType"><value>false</value></fval>
@@ -2606,6 +2747,34 @@
 	<fval name="payloadMask"><value>0</value></fval>
 	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
 	<fval name="uriprefix"><value>/reversal</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="CoreAPIMethod" entityPK="9002682267331334887" parentPK="8690316113367300932">
+	<fval name="blockUnspecifiedParams"><value>true</value></fval>
+	<fval name="checkSourceContentType"><value>false</value></fval>
+	<fval name="copyContentType"><value>INBOUND</value></fval>
+	<fval name="copyQueryParams"><value>true</value></fval>
+	<fval name="corsProfile"><value contentType="reference">-1</value></fval>
+	<fval name="corsUsage"><value xsi:nil="true"></value></fval>
+	<fval name="description"><value></value></fval>
+	<fval name="descriptionLocation"><value>INTERNAL</value></fval>
+	<fval name="destinationContentType"><value>application/x-www-form-urlencoded</value></fval>
+	<fval name="destinationHttpVerb"><value>*</value></fval>
+	<fval name="destinationPath"><value xsi:nil="true"></value></fval>
+	<fval name="enableAccessLogging"><value>0</value></fval>
+	<fval name="enabled"><value>1</value></fval>
+	<fval name="evaluate"><value>1</value></fval>
+	<fval name="filterCircuit"><value contentType="reference">
+<key type='CircuitContainer'><id field='name' value='Generated Policies'/><key type='CircuitContainer'><id field='name' value='REST API&apos;s'/><key type='CircuitContainer'><id field='name' value='07-BAGI_BACKEND_IN_VA'/><key type='FilterCircuit'><id field='name' value='06-CMS_Transaction'/></key></key></key></key>	</value></fval>
+	<fval name="httpMethod"><value>POST</value></fval>
+	<fval name="id"><value>9e9ab497-70b3-4422-8f7e-a5344540a3a3</value></fval>
+	<fval name="logMask"><value>2</value></fval>
+	<fval name="markdownFile"><value></value></fval>
+	<fval name="name"><value>06-CMS_Transaction</value></fval>
+	<fval name="notes"><value></value></fval>
+	<fval name="pathMatching"><value>EXACT</value></fval>
+	<fval name="payloadMask"><value>0</value></fval>
+	<fval name="responseSchema"><value contentType="reference">-1</value></fval>
+	<fval name="uriprefix"><value>/transactions</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="WAFProfileGroup" entityPK="7335944798864196231" parentPK="0">
 	<fval name="name"><value>Threat Protection Profiles</value></fval>
