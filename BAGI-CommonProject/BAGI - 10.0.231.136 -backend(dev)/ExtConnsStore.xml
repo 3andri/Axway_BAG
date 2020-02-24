@@ -1980,11 +1980,11 @@
 	<fval name="name"><value>Service</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RemoteHost" entityPK="-5972137641755547117" parentPK="9048933194065165369">
-	<fval name="activetimeout"><value>10000</value></fval>
+	<fval name="activetimeout"><value>45000</value></fval>
 	<fval name="addressCacheTime"><value>300000</value></fval>
-	<fval name="alias"><value>SERVICE.SIMULATOR</value></fval>
+	<fval name="alias"><value>FIorano Dev 1</value></fval>
 	<fval name="allowHTTP11"><value>0</value></fval>
-	<fval name="connectTimeout"><value>10000</value></fval>
+	<fval name="connectTimeout"><value>45000</value></fval>
 	<fval name="exportCorrelationId"><value>1</value></fval>
 	<fval name="idletimeout"><value>15000</value></fval>
 	<fval name="includeContentLengthRequest"><value>0</value></fval>
@@ -1995,23 +1995,27 @@
 	<fval name="maxInputLen"><value>20971520</value></fval>
 	<fval name="maxOutputLen"><value>20971520</value></fval>
 	<fval name="maxTransTimeout"><value>240000</value></fval>
-	<fval name="name"><value>10.0.231.137</value></fval>
+	<fval name="name"><value>10.0.231.100</value></fval>
 	<fval name="offerTlsServerName"><value>0</value></fval>
 	<fval name="outputBufSize"><value>8192</value></fval>
 	<fval name="outputEncodings"><value>.inherit</value></fval>
-	<fval name="port"><value>8080</value></fval>
+	<fval name="port"><value>1880</value></fval>
 	<fval name="sessionCacheSize"><value>32</value></fval>
 	<fval name="verifyServerHostname"><value>1</value></fval>
 </entity>
-<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="761208153089431043" parentPK="-5972137641755547117">
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="-5113201712435518541" parentPK="-5972137641755547117">
 	<fval name="name"><value>a5838884-389c-4cac-b305-c5a3716dbb8b</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="AddressRank" entityPK="-4186178193043939480" parentPK="-5972137641755547117">
+	<fval name="addresses"><value>10.0.231.137</value></fval>
+	<fval name="rank"><value>0</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RemoteHost" entityPK="429448233798403412" parentPK="9048933194065165369">
-	<fval name="activetimeout"><value>30000</value></fval>
+	<fval name="activetimeout"><value>45000</value></fval>
 	<fval name="addressCacheTime"><value>300000</value></fval>
-	<fval name="alias"><value>SERVICE.FIORANO</value></fval>
+	<fval name="alias"><value>Fiorano Dev 2</value></fval>
 	<fval name="allowHTTP11"><value>0</value></fval>
-	<fval name="connectTimeout"><value>30000</value></fval>
+	<fval name="connectTimeout"><value>45000</value></fval>
 	<fval name="exportCorrelationId"><value>1</value></fval>
 	<fval name="idletimeout"><value>15000</value></fval>
 	<fval name="includeContentLengthRequest"><value>0</value></fval>
@@ -2022,16 +2026,43 @@
 	<fval name="maxInputLen"><value>20971520</value></fval>
 	<fval name="maxOutputLen"><value>20971520</value></fval>
 	<fval name="maxTransTimeout"><value>240000</value></fval>
-	<fval name="name"><value>${env.FIORANO.IP}</value></fval>
+	<fval name="name"><value>10.0.231.101</value></fval>
 	<fval name="offerTlsServerName"><value>0</value></fval>
 	<fval name="outputBufSize"><value>8192</value></fval>
 	<fval name="outputEncodings"><value>.inherit</value></fval>
-	<fval name="port"><value>${env.FIORANO.PORT}</value></fval>
+	<fval name="port"><value>1880</value></fval>
 	<fval name="sessionCacheSize"><value>32</value></fval>
 	<fval name="verifyServerHostname"><value>1</value></fval>
 </entity>
-<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="1608238641668275287" parentPK="429448233798403412">
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="-945045438629199467" parentPK="429448233798403412">
 	<fval name="name"><value>a5838884-389c-4cac-b305-c5a3716dbb8b</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RemoteHost" entityPK="2611720236557423468" parentPK="9048933194065165369">
+	<fval name="activetimeout"><value>45000</value></fval>
+	<fval name="addressCacheTime"><value>300000</value></fval>
+	<fval name="alias"><value>Fiorano Prod 1</value></fval>
+	<fval name="allowHTTP11"><value>0</value></fval>
+	<fval name="connectTimeout"><value>45000</value></fval>
+	<fval name="exportCorrelationId"><value>1</value></fval>
+	<fval name="idletimeout"><value>15000</value></fval>
+	<fval name="includeContentLengthRequest"><value>0</value></fval>
+	<fval name="includeContentLengthResponse"><value>0</value></fval>
+	<fval name="inputBufSize"><value>8192</value></fval>
+	<fval name="inputEncodings"><value>.inherit</value></fval>
+	<fval name="maxConnections"><value>-1</value></fval>
+	<fval name="maxInputLen"><value>20971520</value></fval>
+	<fval name="maxOutputLen"><value>20971520</value></fval>
+	<fval name="maxTransTimeout"><value>240000</value></fval>
+	<fval name="name"><value>10.0.230.232</value></fval>
+	<fval name="offerTlsServerName"><value>0</value></fval>
+	<fval name="outputBufSize"><value>8192</value></fval>
+	<fval name="outputEncodings"><value>.inherit</value></fval>
+	<fval name="port"><value>1880</value></fval>
+	<fval name="sessionCacheSize"><value>32</value></fval>
+	<fval name="verifyServerHostname"><value>1</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="2367497099297023665" parentPK="2611720236557423468">
+	<fval name="name"><value>35a35763-adc5-475e-88e7-6c00dc7884fd</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RemoteHost" entityPK="5206567283871501613" parentPK="9048933194065165369">
 	<fval name="activetimeout"><value>30000</value></fval>
@@ -2063,6 +2094,33 @@
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="7519647774449832038" parentPK="5206567283871501613">
 	<fval name="name"><value>0da0e121-6002-44f1-ba12-999a29bfbb56</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RemoteHost" entityPK="7625655258738703312" parentPK="9048933194065165369">
+	<fval name="activetimeout"><value>30000</value></fval>
+	<fval name="addressCacheTime"><value>300000</value></fval>
+	<fval name="alias"><value>Fiorano Prod 2</value></fval>
+	<fval name="allowHTTP11"><value>0</value></fval>
+	<fval name="connectTimeout"><value>30000</value></fval>
+	<fval name="exportCorrelationId"><value>1</value></fval>
+	<fval name="idletimeout"><value>15000</value></fval>
+	<fval name="includeContentLengthRequest"><value>0</value></fval>
+	<fval name="includeContentLengthResponse"><value>0</value></fval>
+	<fval name="inputBufSize"><value>8192</value></fval>
+	<fval name="inputEncodings"><value>.inherit</value></fval>
+	<fval name="maxConnections"><value>-1</value></fval>
+	<fval name="maxInputLen"><value>20971520</value></fval>
+	<fval name="maxOutputLen"><value>20971520</value></fval>
+	<fval name="maxTransTimeout"><value>240000</value></fval>
+	<fval name="name"><value>10.0.230.233</value></fval>
+	<fval name="offerTlsServerName"><value>0</value></fval>
+	<fval name="outputBufSize"><value>8192</value></fval>
+	<fval name="outputEncodings"><value>.inherit</value></fval>
+	<fval name="port"><value>1880</value></fval>
+	<fval name="sessionCacheSize"><value>32</value></fval>
+	<fval name="verifyServerHostname"><value>1</value></fval>
+</entity>
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="-3413439520101883823" parentPK="7625655258738703312">
+	<fval name="name"><value>08694d9f-41b6-46fb-977f-4eba0cb7d04e</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RemoteHost" entityPK="8563084128048554323" parentPK="9048933194065165369">
 	<fval name="activetimeout"><value>30000</value></fval>

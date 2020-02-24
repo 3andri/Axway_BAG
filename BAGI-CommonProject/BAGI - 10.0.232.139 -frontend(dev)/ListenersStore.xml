@@ -4589,7 +4589,7 @@
 	<fval name="resolveSubjectCNtoNetAddr"><value>0</value></fval>
 	<fval name="reuseAddress"><value>false</value></fval>
 	<fval name="serverCert"><value contentType="reference">
-<key type='Certificates'><id field='name' value='Certificate Store'/><key type='Certificate'><id field='dname' value='ManagertTraffic_Certs'/></key></key>	</value></fval>
+<key type='Certificates'><id field='name' value='Certificate Store'/><key type='Certificate'><id field='dname' value='ManagertTraffic_Certs_2020'/></key></key>	</value></fval>
 	<fval name="sessionCacheSize"><value>32</value></fval>
 	<fval name="ssloptions">
 		<value>nosslv2</value>

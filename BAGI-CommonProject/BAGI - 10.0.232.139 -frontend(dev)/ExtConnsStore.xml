@@ -2051,11 +2051,11 @@
 	<fval name="name"><value>Service</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RemoteHost" entityPK="-6022158733261486336" parentPK="9048933194065165369">
-	<fval name="activetimeout"><value>35000</value></fval>
+	<fval name="activetimeout"><value>60000</value></fval>
 	<fval name="addressCacheTime"><value>300000</value></fval>
 	<fval name="alias"><value>BACKEND.SERVICE</value></fval>
 	<fval name="allowHTTP11"><value>0</value></fval>
-	<fval name="connectTimeout"><value>35000</value></fval>
+	<fval name="connectTimeout"><value>60000</value></fval>
 	<fval name="exportCorrelationId"><value>1</value></fval>
 	<fval name="idletimeout"><value>15000</value></fval>
 	<fval name="includeContentLengthRequest"><value>0</value></fval>
@@ -2074,7 +2074,7 @@
 	<fval name="sessionCacheSize"><value>32</value></fval>
 	<fval name="verifyServerHostname"><value>1</value></fval>
 </entity>
-<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="3034042471608400624" parentPK="-6022158733261486336">
+<entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RoundRobinLbCfg" entityPK="5744828536557052089" parentPK="-6022158733261486336">
 	<fval name="name"><value>bce99d29-77bb-49dc-85c9-8cecff50f2ed</value></fval>
 </entity>
 <entity xmlns="http://www.vordel.com/2005/06/24/entityStore"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="RemoteHost" entityPK="3487447166125575459" parentPK="9048933194065165369">
